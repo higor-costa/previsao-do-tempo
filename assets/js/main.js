@@ -110,7 +110,7 @@ function tempoHoje(json) {
 
 function previsaoLocalizacao(latitude, longitude) {
     exibirPrevisao()
-    const urlApi = `https://api.hgbrasil.com/weather?format=json-cors&key=a3e73fd2&lat=${latitude}&lon=${longitude}&user_ip=remote`
+    const urlApi = `https://api.hgbrasil.com/weather?format=json-cors&key=5aa52a69&lat=${latitude}&lon=${longitude}&user_ip=remote`
 
     fetch(urlApi)
         .then(resposta => resposta.json())
@@ -124,7 +124,7 @@ function previsaoLocalizacao(latitude, longitude) {
 }
 
 function pesquisaPorNome(cidade, estado) {
-    const urlApi = `https://api.hgbrasil.com/weather?format=json-cors&key=a3e73fd2&city_name=${cidade},${estado}`
+    const urlApi = `https://api.hgbrasil.com/weather?format=json-cors&key=5aa52a69&city_name=${cidade},${estado}`
 
     fetch(urlApi)
         .then(resposta => resposta.json())
