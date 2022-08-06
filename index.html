@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="shortcut icon" href="assets/icon/weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+    <header class="header-topo">
+        <h1 class="header-topo__titulo">Previsão do Tempo</h1>
+        <form action="" class="header-topo__form">
+            <div class="form__container">
+                <label for="cidade" class="form__label">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="form__input" required>
+            </div>
+            <div class="form__container">
+                <label for="uf" class="form__label">UF</label>
+                <input type="text" name="uf" id="uf" class="form__input" riquired>
+            </div>
+            <input type="submit" value="Pesquisar" class="form__btn">
+        </form>
+        <img src="assets/icon/weather.png" alt="" class="header-topo__icon">
+    </header>
+
+    <main>
+        <div class="tela-inicial">
+            <p class="tela-inicial__aviso">Para visualizar a previsão do tempo, permita que o navegador obtenha a sua localização ou faça uma pesquisa utilizando o nome da cidade e a sua UF.</p>
+        </div>
+
+        <div class="card-previsao container">
+            <header class="card-previsao__cabecalho container-cabecalho">
+                <h2 class="cabecalho__titulo"><span class="nome-cidade"></span></h2>
+                <span class="cabecalho__data" id="data"></span>
+            </header>
+
+            <div class="card-previsao__tempo">
+                <span class="tempo__temperatura temperatura"></span>
+                <div class="tempo__container">
+                    <img src="" alt="" class="container__icon">
+                    <span class="container__descricao" id="descricao"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-previsao-diaria container">
+            <header class="card-previsao-diaria__cabecalho container-cabecalho">
+                <h2 class="cabecalho__titulo">Previsão diária</h2>
+            </header>
+            <div class="card-previsao-diaria__dias">
+                <div class="dias__dia">
+                    <h3 class="dia__data" id="dia-01"></h3>
+                    <img src="" alt="Nublado" class="dia__icon" id="icon-01">
+                    <div class="dia__temperatura" id="temperaturas-01">
+                        <span class="temperatura__max"></span>
+                        <span class="temperatura__min"></span>                  
+                    </div>
+                </div>
+
+                <div class="dias__dia">
+                    <h3 class="dia__data" id="dia-02"></h3>
+                    <img src="" alt="Nublado" class="dia__icon" id="icon-02">
+                    <div class="dia__temperatura" id="temperaturas-02">
+                        <span class="temperatura__max"></span>
+                        <span class="temperatura__min"></span>
+                    </div>
+                </div>
+
+                <div class="dias__dia">
+                    <h3 class="dia__data" id="dia-03"></h3>
+                    <img src="" alt="Nublado" class="dia__icon" id="icon-03">
+                    <div class="dia__temperatura" id="temperaturas-03">
+                        <span class="temperatura__max"></span>
+                        <span class="temperatura__min"></span>
+                    </div>
+                </div>
+
+                <div class="dias__dia">
+                    <h3 class="dia__data" id="dia-04"></h3>
+                    <img src="" alt="Nublado" class="dia__icon" id="icon-04">
+                    <div class="dia__temperatura" id="temperaturas-04">
+                        <span class="temperatura__max"></span>
+                        <span class="temperatura__min"></span>
+                    </div>
+                </div>
+
+                <div class="dias__dia">
+                    <h3 class="dia__data" id="dia-05"></h3>
+                    <img src="" alt="Nublado" class="dia__icon" id="icon-05">
+                    <div class="dia__temperatura" id="temperaturas-05">
+                        <span class="temperatura__max"></span>
+                        <span class="temperatura__min"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="informacoes-dia container">
+            <header class="informacoes-dia__cabecalho container-cabecalho">
+                <h2 class="cabecalho__titulo">Tempo hoje em <span class="nome-cidade"></span></h2>
+            </header>
+            <div class="informacoes-dia__dados">
+                <span class="dados__temperatura temperatura"></span>
+                <div class="dados__container">
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/temperatura-alta.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Máx</h3>
+                        </div>
+                        <span class="container-dado__dado" id="tempMax"></span>
+                    </div>
+
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/temperatura-baixa.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Mín</h3>
+                        </div>
+                        <span class="container-dado__dado" id="tempMin"></span>
+                    </div>
+
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/por-do-sol.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Pôr do Sol</h3>
+                        </div>
+                        <span class="container-dado__dado" id="porDoSol"></span>
+                    </div>
+
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/nascer-do-sol.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Nascer do Sol</h3>
+                        </div>
+                        <span class="container-dado__dado" id="nascerDoSol"></span>
+                    </div>
+
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/umidade.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Umidade</h3>
+                        </div>
+                        <span class="container-dado__dado" id="umidade"></span>
+                    </div>
+
+                    <div class="container-dado">
+                        <div>
+                            <img src="assets/icon/vento.png" alt="" class="container-dado__icon">
+                            <h3 class="container-dado__descricao">Vento</h3>
+                        </div>
+                        <span class="container-dado__dado" id="vento"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
