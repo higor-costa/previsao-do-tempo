@@ -17,6 +17,7 @@ function previsao(json) {
 function trocaIcon(condicaoClimatica) {
     $('.container__icon').prop('src', `assets/icon/${condicaoClimatica}.png`)
     $('.container__icon').prop('alt', `${condicaoClimatica}`)
+    $('.container__icon').prop('title', `${condicaoClimatica}`)
 }
 
 function previsaoDiaria(json) {
