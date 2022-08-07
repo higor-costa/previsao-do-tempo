@@ -150,6 +150,10 @@ document.querySelector('.form__btn').addEventListener('click', (e) => {
     if (cidade == '' || estado == '') {
         return
     }
+    else if (Error) {
+        pesquisaPorNome(cidade, estado)
+        return
+    } 
     
     pesquisaPorNome(cidade, estado)
 })
