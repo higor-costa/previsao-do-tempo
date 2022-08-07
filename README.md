@@ -17,11 +17,13 @@ O **Previsão do Tempo** possui um nome que descreve a sua única função. É u
 
 ### Mobile
 
-![Captura de tela - mobile](/assets/img/screenshot/mobile.png)
+![Captura de tela 1 - mobile](/assets/img/screenshot/mobile.png)
+![Captura de tela 2 - mobile](/assets/img/screenshot/mobile-previsao.png)
 
 ### Desktop
 
-![Captura de tela - desktop](/assets/img/screenshot/desktop.png)
+![Captura de tela 1 - desktop](/assets/img/screenshot/desktop.png)
+![Captura de tela 2 - desktop](/assets/img/screenshot/desktop-previsao.png)
 
 
 ## Funcionalidade do projeto:
