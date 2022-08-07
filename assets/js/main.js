@@ -147,7 +147,10 @@ document.querySelector('.form__btn').addEventListener('click', (e) => {
     const cidade = form.cidade.value
     const estado = form.uf.value
 
-    exibirPrevisao()
+    if (cidade == '' || estado == '') {
+        return
+    }
+    
     pesquisaPorNome(cidade, estado)
 })
 
