@@ -93,10 +93,19 @@ function trocaIconDiarios(previsao) {
     ]
 
     $('#icon-01').prop('src', `assets/icon/${clima[0]}.png`)
+    $('#icon-01').prop('alt', `${clima[0]}`)
+
     $('#icon-02').prop('src', `assets/icon/${clima[1]}.png`)
+    $('#icon-02').prop('alt', `${clima[1]}`)
+
     $('#icon-03').prop('src', `assets/icon/${clima[2]}.png`)
+    $('#icon-03').prop('alt', `${clima[2]}`)
+
     $('#icon-04').prop('src', `assets/icon/${clima[3]}.png`)
+    $('#icon-04').prop('alt', `${clima[3]}`)
+
     $('#icon-05').prop('src', `assets/icon/${clima[4]}.png`)
+    $('#icon-05').prop('alt', `${clima[4]}`)
 }
 
 function tempoHoje(json) {
