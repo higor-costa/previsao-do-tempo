@@ -15,55 +15,7 @@ function previsao(json) {
 }
 
 function trocaIcon(condicaoClimatica) {
-    switch (condicaoClimatica) {
-        case 'storm':
-            $('.container__icon').prop('src', `assets/icon/storm.png`);
-            break;
-
-        case 'snow': 
-            $('.container__icon').prop('src', `assets/icon/snow.png`);
-            break;
-
-        case 'heil':
-            $('.container__icon').prop('src', `assets/icon/hail.png`);
-            break;
-
-        case 'rain':
-            $('.container__icon').prop('src', `assets/icon/rain.png`);
-            break;
-
-        case 'fog':
-            $('.container__icon').prop('src', `assets/icon/fog.png`); 
-            break;
-
-        case 'clear_day':
-            $('.container__icon').prop('src', `assets/icon/clear_day.png`); 
-            break;
-
-        case 'clear_night':
-            $('.container__icon').prop('src', `assets/icon/clear_night.png`); 
-            break;
-
-        case 'cloud':
-            $('.container__icon').prop('src', `assets/icon/cloud.png`); 
-            break;
-
-        case 'cloudly_day':
-            $('.container__icon').prop('src', `assets/icon/cloudly_day.png`); 
-            break;
-
-        case 'cloudly_night':
-            $('.container__icon').prop('src', `assets/icon/cloudly_night.png`); 
-            break;
-
-        case 'none_day':
-            $('.container__icon').prop('src', `assets/icon/none_day.png`); 
-            break;
-
-        case 'none_night':
-            $('.container__icon').prop('src', `assets/icon/none_night.png`); 
-            break;
-    }
+    $('.container__icon').prop('src', `assets/icon/${condicaoClimatica}.png`)
 }
 
 function previsaoDiaria(json) {
