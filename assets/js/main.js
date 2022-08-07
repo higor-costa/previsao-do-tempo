@@ -133,6 +133,7 @@ function pesquisaPorNome(cidade, estado) {
             previsao(json)
             previsaoDiaria(json)
             tempoHoje(json)
+            exibirPrevisao()
         })  
         .catch(error => alert('Erro ao pesquisar dados. Por favor, Tente novamente!', error))
 }
